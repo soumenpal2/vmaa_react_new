@@ -1,0 +1,682 @@
+.black-section {
+  display: flex;
+  background-color: #000; 
+  color: white;
+  padding: 80px 60px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; 
+  
+}
+
+.text-container {
+  flex: 1;
+}
+.text-container.left p{
+   font-size: 22px;
+}
+.text-container.left h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+  width: 70%;
+}
+
+.text-container.right p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ecebeb;
+  width: 85%;
+}
+/* .......videocarousel.............. */
+
+.video-carousel-wrapper {
+  width: 100%;
+  padding: 80px 0;
+  background: black;
+}
+
+.video-swiper {
+  width: 100%;
+  margin: auto;
+}
+
+.video-slide {
+  transition: transform 0.3s ease;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 500px;
+}
+
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #333;
+  border-radius: 12px;
+}
+
+.video-title {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.video-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+
+
+.video-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.video-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 800px;
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 0;
+  outline: none;
+  border: none;
+  z-index: 1000;
+}
+
+.modal-video {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.video-icon:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* Modal styling */
+.video-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal {
+  width: 80%;
+  max-width: 800px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.modal-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* ............TwoSectionLayout-css.............. */
+
+.container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.left-container, .right-container {
+  flex: 1;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.overlay-text h2 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+}
+
+.overlay-text p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.overlay-text a {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.below-text {
+  margin-top: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.below-text h2 {
+  margin-bottom: 8px;
+   font-size: 35px;
+   font-weight: 500;
+   width: 80%;
+}
+
+.below-text a {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  font-size: 17px;
+}
+.below-text p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+h2{
+  margin: 0;
+}
+/* ................TestimonialSlider........................ */
+
+
+.section-wrapper {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+  color: #fff;
+  width: 100%;
+}
+
+.testimonial-wrapper {
+  margin: 0 auto 60px;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.testimonial-slide {
+  padding: 30px 10px;
+}
+
+.stars {
+  margin-bottom: 15px;
+}
+
+.testimonial-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.testimonial-designation {
+  font-size: 20px;
+  color: #e4e4e4;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom-prev,
+.custom-next {
+  font-size: 28px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 10px 16px;
+  background-color: #45444454;
+  opacity: 1;
+  border-radius: 6px;
+  user-select: none;
+  color: #ffffff;
+}
+
+.pagination {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Below Section */
+.below-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.below-left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.below-right {
+  flex: 1;
+}
+
+.below-right h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  width: 85%;
+
+}
+
+.below-right p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.below-right button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* ..................animated text................................. */
+.scrolling-section-wrapper {
+  color: white;
+}
+
+/* Intro Paragraph */
+.intro-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff; 
+  text-align: center;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* Scrolling Text */
+.scrolling-text-wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.scrolling-text {
+  display: inline-block;
+  font-size: 210px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #edb21e; 
+  animation: scrollText 70s linear infinite; 
+  padding-right: 30px;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Team Section */
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 70px;
+}
+
+.team-card {
+  flex: 1 1 calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  text-align: center;
+  color: #fff;
+}
+
+.team-card img {
+  width: 100%;
+  height: 290px; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.team-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.popup-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #edb21e;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #c99610;
+}
+
+
+
+
+
+
+
+
+
+/* ..............LeftTextSection............... */
+
+
+
+.left-section-content {
+  max-width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.left-section-content p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.left-section-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  width: 80%;
+}
+
+.logo-col p{
+  margin: 0;
+}
+
+.footer-bottom-col h4{
+  margin: 0;
+}
+
+
+.left-section-content button {
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* ...................footer css................. ..............*/
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 70px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-col .footer-logo-img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 30px 0;
+  opacity: 0.2;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer-bottom-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+
+.footer-center-logo {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0; 
+  background-color: white;
+  padding: 10px 25px;
+  border-radius: 58px;
+}
+
+.footer-bottom-col input {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 40px 30px;
+  }
+}
+
+
+
+
+/* /////////////////MasonryGallery css///////////////////////////// */
+
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 1.5rem;
+  padding: 2rem 3rem; 
+  max-width: 1300px;
+  margin: 0 auto; 
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+@media screen and (max-width: 992px) {
+  .masonry-gallery {
+    column-count: 2;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry-gallery {
+    column-count: 1;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,122 @@
+.black-layout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 70px;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  background-color: #111;
+  color: white;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.black-layout-left,
+.black-layout-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.black-layout-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100%;
+}
+
+.black-layout-title {
+  font-size: 42px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.5;
+}
+
+h2.black-layout-title {
+  margin: 0;
+}
+
+.black-layout-button {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid white;
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+
+.black-layout-left-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.black-layout-image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+}
+
+.black-layout-big-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.black-layout-small-image {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 2%;
+  transform: translate(-40%, -30%);
+  z-index: 2;
+  border-radius: 6px;
+}
+
+/* Responsive for tablet */
+@media (max-width: 1024px) {
+  .black-layout-title {
+    font-size: 32px;
+  }
+
+  .black-layout-left,
+  .black-layout-right {
+    width: 100%;
+  }
+
+  .black-layout-container {
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .black-layout-left-image {
+    max-width: 100%;
+  }
+
+  .black-layout-image-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .black-layout-title {
+    font-size: 24px;
+  }
+
+  .black-layout-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .black-layout-small-image {
+    width: 60%;
+    transform: translate(-30%, -20%);
+  }
+}

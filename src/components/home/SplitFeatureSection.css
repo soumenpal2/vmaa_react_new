@@ -1,0 +1,149 @@
+.split-section {
+  background-image: url("/public/images/footer-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.split-overlay {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1600px;
+  gap: 80px;
+  padding: 70px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.split-left {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+.split-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.feature-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.feature-small-image {
+  position: absolute;
+  bottom: -5%;
+  right: -10%;
+  width: 40%;
+  height: auto;
+  border: 2px solid #2a2929;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.feature-title {
+  font-size: 36px;
+  margin: 0 0 16px;
+  color: white;
+  font-weight: 600;
+  width: 80%;
+  line-height: 1.6;
+}
+
+.feature-description {
+  font-size: 18px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  color: #eaeaea;
+}
+
+.feature-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .split-overlay {
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+  }
+
+  .split-left,
+  .split-right {
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .feature-title {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .feature-small-image {
+    width: 40%;
+    right: 0;
+    bottom: -10%;
+    transform: none;
+  }
+
+  .feature-description {
+    font-size: 16px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-description {
+    font-size: 15px;
+  }
+
+  .feature-button {
+    font-size: 13px;
+  }
+
+  .feature-small-image {
+    width: 50%;
+    bottom: -12%;
+    right: 0;
+  }
+}
