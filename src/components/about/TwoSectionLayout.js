@@ -13,7 +13,7 @@ const TwoSectionLayout = () => {
       }}
     >
       <div className="container">
-        {/* Left Container */}
+        
         <div className="left-container">
           <div className="image-wrapper">
             <img src="/images/about-image/left1.jpg" alt="Left" className="image" />
@@ -27,7 +27,7 @@ const TwoSectionLayout = () => {
           </div>
         </div>
 
-        {/* Right Container */}
+        
         <div className="right-container">
           <img src="/images/about-image/right1.jpg" alt="Right" className="image" />
           <div className="below-text">

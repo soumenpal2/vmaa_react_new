@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+
         {/* Top Section */}
         <div className="footer-top">
           <div className="footer-col logo-col">
@@ -42,7 +43,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <hr className="footer-divider" />
 
         {/* Bottom Section */}
@@ -64,10 +64,12 @@ const Footer = () => {
             </div>
           </div>
 
-    <div className="footer-bottom-col">
-  <img src={footerLogo1} alt="Centered Logo" className="footer-center-logo" />
-</div>
-
+          <div className="footer-bottom-col">
+            <a href="https://aanaxagorasr.in/" target="_blank" rel="noopener noreferrer">
+              <img src={footerLogo1} alt="Centered Logo" className="footer-center-logo" />
+            </a>
+            <p className="footer-logo-caption">Crafted with Code & Creativity by Aanaxagorasr Software</p>
+          </div>
 
           <div className="footer-bottom-col">
             <h4>Newsletter</h4>

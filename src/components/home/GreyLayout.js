@@ -4,7 +4,7 @@ import "./GreyLayout.css";
 const GreyLayout = () => {
   return (
     <div className="grey-layout-container">
-      {/* Left Side */}
+      
       <div className="grey-layout-left">
         <p className="grey-layout-title">WOCOMMERCE</p>
         <h2 className="grey-layout-title">YOUR ONLINE MOVIE <span style={{color:'pink'}}>STORE</span></h2>
@@ -16,7 +16,7 @@ const GreyLayout = () => {
         />
       </div>
 
-      {/* Right Side */}
+     
       <div className="grey-layout-right">
         <div className="grey-layout-image-wrapper">
           <img

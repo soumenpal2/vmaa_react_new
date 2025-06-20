@@ -82,3 +82,66 @@ h2.grey-layout-title{
   transform: translate(-40%, 12%);
   z-index: 2;
 }
+
+
+/* =============== Responsive Design =============== */
+
+@media (max-width: 1024px) {
+  .grey-layout-container {
+    padding: 40px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .grey-layout-left,
+  .grey-layout-right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grey-layout-left p.grey-layout-title,
+  .grey-layout-left h2.grey-layout-title {
+    text-align: center;
+  }
+
+  .grey-layout-button {
+    align-self: center;
+  }
+
+  .grey-layout-left-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .grey-layout-image-wrapper {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .grey-layout-small-image {
+    width: 50%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-20%, 20%);
+  }
+}
+
+@media (max-width: 600px) {
+  .grey-layout-title {
+    font-size: 28px;
+  }
+
+  .grey-layout-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .grey-layout-small-image {
+    width: 60%;
+    top: 55%;
+    left: 15%;
+    transform: translate(-25%, 20%);
+  }
+}

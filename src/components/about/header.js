@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="header" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/about-image/background.png)` }}>
       
-      {/*  Moved OUTSIDE of header-container */}
+     
       <div className="centered-image">
         <img src={`${process.env.PUBLIC_URL}/images/about-image/logo.jpg`} alt="Centered" />
       </div>

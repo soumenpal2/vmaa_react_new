@@ -50,7 +50,7 @@
   transform: scale(1.03);
 }
 
-/* Responsive for tablets */
+
 @media (max-width: 1024px) {
   .masonry-container {
     column-count: 2;
@@ -65,7 +65,6 @@
   }
 }
 
-/* Responsive for mobile devices */
 @media (max-width: 600px) {
   .masonry-container {
     column-count: 1;

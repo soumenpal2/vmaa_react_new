@@ -20,7 +20,7 @@ function Hero() {
     }
   }, [currentIndex]);
 
-  // Advance slide on video end
+ 
   useEffect(() => {
     const handleEnded = () => {
       setCurrentIndex((i) => (i + 1) % videoSources.length);

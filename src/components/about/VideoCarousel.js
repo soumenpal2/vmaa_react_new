@@ -32,7 +32,7 @@ const VideoCarousel = () => {
   return (
     <div className="video-carousel-wrapper">
       <Swiper
-        modules={[Autoplay]} // ✅ Swiper v11 way
+        modules={[Autoplay]} 
         centeredSlides={true}
         loop={true}
         autoplay={{ delay: 3500, disableOnInteraction: false }}

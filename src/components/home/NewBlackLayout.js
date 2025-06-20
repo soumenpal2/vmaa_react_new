@@ -4,7 +4,7 @@ import "./NewBlackLayout.css";
 const NewBlackLayout = () => {
   return (
     <div className="black-layout-container">
-      {/* Left Side */}
+      
       <div className="black-layout-left">
         <p>BLOG</p>
         <div className="black-layout-content">
@@ -20,7 +20,7 @@ const NewBlackLayout = () => {
         </div>
       </div>
 
-      {/* Right Side */}
+      
       <div className="black-layout-right">
         <div className="black-layout-image-wrapper">
           <img

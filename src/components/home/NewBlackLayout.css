@@ -30,10 +30,11 @@
 }
 
 .black-layout-title {
-  font-size: 42px;
+  font-size: clamp(24px, 4vw, 42px);
   font-weight: 500;
   color: white;
   line-height: 1.5;
+  margin: 0;
 }
 
 h2.black-layout-title {
@@ -49,6 +50,13 @@ h2.black-layout-title {
   border: 1px solid white;
   align-self: flex-start;
   margin-bottom: 40px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.black-layout-button:hover {
+  background-color: white;
+  color: black;
 }
 
 .black-layout-left-image {
@@ -66,6 +74,7 @@ h2.black-layout-title {
 .black-layout-big-image {
   width: 100%;
   z-index: 1;
+  border-radius: 8px;
 }
 
 .black-layout-small-image {
@@ -78,36 +87,49 @@ h2.black-layout-title {
   border-radius: 6px;
 }
 
-/* Responsive for tablet */
+/* ========== TABLET VIEW (≤ 1024px) ========== */
 @media (max-width: 1024px) {
-  .black-layout-title {
-    font-size: 32px;
-  }
-
-  .black-layout-left,
-  .black-layout-right {
-    width: 100%;
-  }
-
   .black-layout-container {
     padding: 40px 20px;
     flex-direction: column;
     align-items: center;
   }
 
+  .black-layout-left,
+  .black-layout-right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .black-layout-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .black-layout-button {
+    align-self: center;
+  }
+
   .black-layout-left-image {
     max-width: 100%;
+    margin-top: 20px;
   }
 
   .black-layout-image-wrapper {
     max-width: 100%;
   }
+
+  .black-layout-small-image {
+    width: 50%;
+    transform: translate(-30%, -20%);
+  }
 }
 
-/* Responsive for mobile */
+/* ========== MOBILE VIEW (≤ 600px) ========== */
 @media (max-width: 600px) {
   .black-layout-title {
-    font-size: 24px;
+    font-size: clamp(20px, 5.5vw, 28px);
   }
 
   .black-layout-button {
@@ -117,6 +139,12 @@ h2.black-layout-title {
 
   .black-layout-small-image {
     width: 60%;
-    transform: translate(-30%, -20%);
+    top: 55%;
+    left: 10%;
+    transform: translate(-30%, -10%);
+  }
+
+  .black-layout-left-image {
+    max-width: 100%;
   }
 }

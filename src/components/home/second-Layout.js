@@ -4,7 +4,7 @@ import "./second-Layout.css";
 const Layout = () => {
   return (
     <div className="container">
-      {/* Left Side */}
+      
       <div className="left-side">
         <p>Movie Presentation</p>
         <h2 className="title">A wide variety of portfolios</h2>
@@ -21,7 +21,7 @@ const Layout = () => {
         />
       </div>
 
-      {/* Right Side */}
+      
       <div className="right-side">
         <div className="image-wrapper">
           <img

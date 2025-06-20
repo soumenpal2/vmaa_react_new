@@ -5,7 +5,7 @@ const SplitFeatureSection = () => {
   return (
     <div className="split-section">
       <div className="split-overlay">
-        {/* Left Container */}
+        
         <div className="split-left">
           <div className="feature-image-wrapper">
             <img
@@ -22,7 +22,7 @@ const SplitFeatureSection = () => {
           </div>
         </div>
 
-        {/* Right Container */}
+        
         <div className="split-right">
           <p className="feature-description">
             FILM THEME
